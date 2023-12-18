@@ -1,15 +1,19 @@
 # Documentación de WorkCard
+
 ## Propósito del Sitio Web:
-WorkCard es una aplicación de tarjeta de presentación digital que tiene como objetivo revolucionar el intercambio de contactos comerciales. Este sitio web busca presentar de manera clara y atractiva los beneficios de usar WorkCard, destacando su naturaleza sostenible al eliminar el uso de tarjetas físicas.
+WorkCard es una aplicación de tarjeta de presentación digital destinada a transformar el intercambio de contactos comerciales. El sitio web tiene como objetivo presentar de manera clara y atractiva las funcionalidades y beneficios de utilizar WorkCard. Destaca la sostenibilidad al eliminar el uso de tarjetas físicas y promueve una forma más inteligente de compartir información de contacto.
 
 ## Diseño Responsivo:
 
-El sitio web de WorkCard ha sido diseñado utilizando un enfoque responsivo para garantizar una experiencia óptima en diferentes dispositivos y tamaños de pantalla. Se ha implementado una combinación de CSS y la librería Spectre CSS para lograr un diseño adaptable y compatible con dispositivos móviles, tablets y ordenadores.
+El diseño del sitio web de WorkCard se enfoca en la adaptabilidad a diferentes dispositivos y tamaños de pantalla. Se ha implementado un diseño responsivo utilizando CSS junto con la librería Spectre CSS. Esto asegura una experiencia de usuario consistente y óptima en dispositivos móviles, tablets y ordenadores.
 
 ## Tecnologías Utilizadas:
 
-Durante la construcción se ha usado:
-- HTML: Estructura y contenido del sitio.
-- CSS (Spectre CSS): Estilos y diseño responsivo.=
+Durante el desarrollo del sitio web, se han utilizado las siguientes tecnologías:
 
-El código HTML proporcionado muestra la estructura de la página, incluyendo secciones como la introducción, descripción de características, información de contacto y un pie de página con suscripción al boletín y enlaces legales.
+- **HTML:** Se ha utilizado para la estructura y el contenido de la página, definiendo secciones clave como la introducción, descripción de características y la sección de contacto.
+- **CSS (Spectre CSS):** Esta librería se ha empleado para estilos y diseño responsivo, asegurando una presentación visual atractiva y compatible con diferentes dispositivos.
+- **PHP:** El código PHP se ha integrado en el sitio web para dinamizar y manejar la lógica del lado del servidor, como la inclusión de fragmentos de código reutilizables, la conexión con la base de datos y la generación dinámica de contenido.
+- **WordPress:** El sitio web se ha desarrollado sobre la plataforma WordPress para facilitar la gestión del contenido. WordPress ha sido utilizado para crear y organizar el contenido, administrar temas y plugins, y ofrecer funcionalidades como la generación de títulos dinámicos y la gestión de usuarios.
+
+El código HTML proporcionado muestra la estructura visual de la página web, incluyendo secciones como la presentación, descripción de características y una sección introductoria que resalta los beneficios de utilizar WorkCard. El código PHP también ha sido incorporado para dinamizar y gestionar aspectos del sitio basados en WordPress, permitiendo la creación y gestión eficiente del contenido.

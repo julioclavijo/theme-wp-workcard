@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>WorkCard - My Business Card - conecte con los negocios</title>
+    <link rel="stylesheet" href="<?php echo esc_url( get_stylesheet_uri() ); ?>" type="text/css" />
+    <title><?php wp_title( '|', true, 'right' ); ?></title>
+    <?php wp_head(); ?>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
             <header>
                 <nav>
                     <div>
-                        <img src="assets/logo.png" alt="" class="logo">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo.png" alt="" class="logo">
                     </div>
                     <ul>
                         <li><a href="#inicio">Inicio</a></li>
@@ -36,7 +37,7 @@
                             </h1>
                         </div>
                         <div class="columns col-6">
-                            <img src="assets/app-header.png" alt="">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/app-header.png" alt="">
                         </div>
                     </div>
                     
@@ -48,7 +49,7 @@
             <div class="container">
                 <div class="columns">
                     <article class="column col-5 col-md-4 col-sm-12 card-image">
-                        <img src="assets/woman-download.png" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/woman-download.png" alt="">
                     </article>
                     <article class="column col-7 col-md-8 col-sm-12">
                         <h3 class="p2">
@@ -69,8 +70,8 @@
                             Disponible en:
                         </p>
                         <div>
-                            <img src="assets/google-play.png" alt="">
-                            <img src="assets/app-store.png" alt="">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/google-play.png" alt="">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/app-store.png" alt="">
                         </div>
                     </article>
                 </div>
@@ -91,7 +92,7 @@
                 <div class="column col-6">
                     <div class="columns">
                         <div class="column col-6  col-mx-auto">
-                            <img src="assets/icon-card.png" alt="">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icon-card.png" alt="">
                             <p>
                                 <span class="bold">Tarjetas de presentación digitales:</span>
                             </p>
@@ -101,7 +102,7 @@
 
                         </div>
                         <div class="column col-6">
-                            <img src="assets/icon-acces.png" alt="">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icon-acces.png" alt="">
                             <p>
                                 <span class="bold">Acceso instantáneo:</span>
                             </p>
@@ -111,7 +112,7 @@
 
                         </div>
                         <div class="column col-6">
-                            <img src="assets/icon-speed.png" alt="">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icon-speed.png" alt="">
                             <p>
                                 <span class="bold">Intercambio rápido y sencillo:</span>
                             </p>
@@ -121,7 +122,7 @@
 
                         </div>
                         <div class="column col-6">
-                            <img src="assets/icon-eco.png" alt="">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icon-eco.png" alt="">
                             <p>
                                 <span class="bold">Ecoamigable:</span>
                             </p>
@@ -134,7 +135,7 @@
                 </div>
                 <div class="column col-6">
                     <div class="wireframes">
-                        <img src="assets/wireframes.png" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wireframes.png" alt="">
                     </div>
                 </div>
             </div>
@@ -143,7 +144,7 @@
         <section class="container workcard">
             <div class="columns">
                 <div class="column col-5 card-image">
-                    <img src="assets/public-workcard.png" alt="">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/public-workcard.png" alt="">
                 </div>
                 <div class="column col-7">
                     <h3>Únete a la revolución digital del intercambio de contactos.</h3>
@@ -155,53 +156,10 @@
                         Ya sea que dirijas una gran corporación o estés comenzando tu propio camino como profesional
                         independiente, WorkCard es tu aliado para un intercambio comercial más ágil y responsable.
                     </p>
-                </div>
+                </div>  
             </div>
         </section>
-        <footer id="footer">
-            <div class="container">
-                <div class="columns">
-                    <div class="column col-3">
-                        <img src="assets/logo-footer.png" alt="">
-                    </div>
-                    <div class="column col-3">
-                        <p>Contacto</p>
-                        <ul>
-                            <li>info@workcard.com</li>
-                            <li>3125587200</li>
-                            <li>Bogotá Colombia</li>
-                        </ul>
-                    </div>
-                    <div class="column col-3">
-                        <ul>
-                            <li>Inicio</li>
-                            <li>¿Qué es WorkCard?</li>
-                            <li>Caractéricas</li>
-                            <li>Contacto</li>
-                        </ul>
-                    </div>
-                    <div class="column col-3">
-                        <h4>Suscribirse al boletín</h4>
-                        <form action="">
-                            <input type="text" name="" id="" placeholder="correo electrónico">
-                            <button><img src="assets/enviar.svg" alt=""></button>
-                        </form>
-                    </div>
-                </div>
-                <hr class="divider">
-                <div class="columns creditos">
-                    <div class="column col-6">
-                        <p>WorkCard © 2023 | Todos los derechos reservados</p>
-                    </div>
-                    <div class="column col-6">
-                        <p class="text-left">
-                            Términos y condiciones
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </footer>
+        <?php get_footer(); ?>
     </div>
 </body>
 
